@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/statusfy.jar clojure.main -m statusfy.core $PORT
