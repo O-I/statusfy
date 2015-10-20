@@ -6,6 +6,8 @@
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [ring "1.4.0"]
                  [compojure "1.4.0"]]
+  :min-lein-version "2.0.0"
+  :uberjar-name "statusfy.jar"
   :main statusfy.core
   :profiles {:dev
              {:main statusfy.core/-dev-main}})
