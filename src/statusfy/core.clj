@@ -66,7 +66,7 @@
     524 "A Timeout Occurred"
     598 "Unknown Network Read Timeout Error"
     599 "Unknown Network Connect Timeout Error"}
-    code "Not Found"))
+    code "Statusfy can't crack that code"))
 
 (defn status-code [{:keys [:route-params]}]
   (let [code (-> route-params :code Integer.)]
