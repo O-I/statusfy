@@ -75,9 +75,9 @@
      :headers {}}))
 
 (defroutes app
-  (GET "/:code" [] status-code)
   (GET "/status" [] status)
   (GET "/request" [] handle-dump)
+  (GET "/:code" [] status-code)
   (not-found "Can't get no Statusfaction"))
 
 (defn -main [port]
