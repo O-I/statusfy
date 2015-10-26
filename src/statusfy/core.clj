@@ -75,10 +75,11 @@
      :headers {}}))
 
 (defroutes app
-  (GET "/status" [] status)
+  (GET "/"        [] status)
+  (GET "/status"  [] status)
   (GET "/request" [] handle-dump)
-  (GET "/:code" [] status-code)
-  (not-found "Can't get no Statusfaction"))
+  (GET "/:code"   [] status-code)
+  (not-found      "Can't get no Statusfaction"))
 
 (defn -main [port]
   (jetty/run-jetty app
